@@ -43,6 +43,31 @@
     
     }
     </script>
+    <div class="container">
+        <img id="picture" src="jassid.jpg" width="100px" height="100px" onclick=swapImage()>
     
+    <script>
+    var useImage = 1
+     function swapImage(){
+            switch (useImage){
+            case 1:
+                document.getElementById("picture").src = "jassid.jpg"
+                useImage +=1
+                break;
+            case 2:
+            document.getElementById("picture").src = "assassin.jpg"
+            useImage +=1
+                break;
+            case 3:
+            document.getElementById("picture").src = "stinkbug.jpg"
+            useImage =1
+            break;
+            
+        }
+    
+    
+    }
+        </script>
+    </div>
 </body>
 </html>
